@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "sharetribe-web",
   "version": "2.1.1",
   "private": true,
   "license": "Apache-2.0",
@@ -129,5 +129,7 @@
     "singleQuote": true,
     "trailingComma": "es5",
     "proseWrap": "always"
-  }
+  },
+  "repository": "git@github.com:ncoded-solutions/sharetribe-web.git",
+  "author": "zexcs <zlatkovic.zeljko97@gmail.com>"
 }
