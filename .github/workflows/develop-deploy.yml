@@ -1,0 +1,27 @@
+name: Ncoded develop server deploys
+
+defaults:
+  run:
+    shell: bash -ieo pipefail {0}
+
+on:
+  push:
+      branches:
+        - develop
+
+jobs:
+  build:
+    name: Build develop branch on sharetribe-web.ncoded.xyz
+    runs-on: [self-hosted,linux,ncoded-dev]
+    steps:
+      - name: Install dependencies and build project - Ncoded server instance
+        working-directory: /var/www/sharetribe-web
+        run: |
+          git reset --hard
+          git checkout develop
+          git pull origin develop
+          nvm use v16.18.0
+          CI=false && yarn
+          yarn build
+          yarn release
+          yarn restart
