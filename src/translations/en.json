@@ -1024,7 +1024,7 @@
   "TransactionPanel.default-booking.orderBreakdownTitle": "Booking breakdown",
   "TransactionPanel.default-purchase.orderBreakdownTitle": "Order breakdown",
   "TransactionPanel.deletedListingOrderTitle": "a listing",
-  "TransactionPanel.deletedListingTitle": "Deleted listing",
+  "TransactionPanel.deletedListingTitle": "Deleted a listing",
   "TransactionPanel.disputeOrder": "Dispute order",
   "TransactionPanel.initialMessageFailed": "Oops, failed to send message from checkout.",
   "TransactionPanel.messageDeletedListing": "However, the listing is deleted and can't be viewed anymore.",
