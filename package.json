@@ -1,5 +1,5 @@
 {
-  "name": "sharetribe-web",
+  "name": "respare-marketplace",
   "version": "2.1.1",
   "private": true,
   "license": "Apache-2.0",
@@ -107,8 +107,10 @@
     "dev-server": "cross-env-shell NODE_ENV=development PORT=4000 REACT_APP_MARKETPLACE_ROOT_URL=http://localhost:4000 \"yarn run build&&nodemon --watch server server/index.js\"",
     "test-server": "jest ./server/**/*.test.js",
     "heroku-postbuild": "yarn run build",
-    "start": "pm2 start pm2.prod.config.js",
-    "restart": "pm2 reload pm2.prod.config.js",
+    "start:dev": "pm2 start pm2.dev.config.js",
+    "restart:dev": "pm2 reload pm2.dev.config.js",
+    "start:prod": "pm2 start pm2.prod.config.js",
+    "restart:prod": "pm2 reload pm2.prod.config.js",
     "translate": "node scripts/translations.js"
   },
   "browserslist": {
